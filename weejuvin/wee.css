@@ -1,6 +1,6 @@
 *{
     font-family: "Inter", sans-serif;
-    zoom:99%;
+    zoom:100%;
     margin: 0;
     padding: 0;
     
@@ -15,6 +15,9 @@
 }
 body::-webkit-scrollbar {
     display: none;
+}
+body{
+    height: 100%;
 }
 
 header{
@@ -361,10 +364,11 @@ footer {
     }
     .container{
         background-repeat: no-repeat;
-        background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)), url(https://archive.org/35/items/wdmxpro/header/2.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)), url(https://archive.org/35/items/wdmxpro/header/1.jpg);
         flex: 1;
         display: flex;
         background-size: cover;
+        background-position: center;
         flex-direction: column;
         height: auto;
         width: 100%;

@@ -6,7 +6,10 @@
     scrollbar-width: none;  /* Firefox */
     text-decoration: none;
 }
-
+@media only screen and (max-width: 4000px) {
+  @viewport{
+    width: 1440px;
+}
 
 /* Header */
 .menu {
@@ -312,6 +315,7 @@
   color: #aa7b03;
   transition: 0.5s ease-in-out;
 }
+}
 
 /* Large Mobile Phone */
 @media only screen and (max-width: 600px) {
@@ -453,15 +457,13 @@ body {
 
 
   .images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     margin-top: -20px;
 
   }
   .image-container .bill{
-    width: 500px;
-    height: 400px;
+    width: 200px;
+    height: 100px;
     transition: all 0.3s;
     border:3px solid #aa7b03;
     z-index: -1;
@@ -473,6 +475,18 @@ body {
     border:3px solid #aa7b03;
     z-index: -1;
   }
-
-  .featured 
+  
+  .title-card {
+    width: 260px;
+    margin-right: 327px;
+    margin-top: 20px;
   }
+
+  .title1 h2{
+    font-size: 20px;
+  }
+
+ 
+
+
+}
