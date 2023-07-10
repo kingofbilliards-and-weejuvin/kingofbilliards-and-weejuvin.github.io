@@ -368,7 +368,8 @@ header img{
     display: flex;
     align-items: center;
     padding: 0rem 8rem;
-    z-index: -1
+    z-index: -1;
+    border-bottom: 5px solid #aa7b03;
 }
 
 .item-3#blur3.active{
@@ -489,35 +490,52 @@ header img{
 footer{
     background-color: #303030;
     padding: 4rem;
-    font-family: sans-serif;
+    font-family: 'Inter';
     display: flex;
     justify-content: center;
 }
 
 .king-of-billiards{
-    display: flex;
+    display: block;
     flex-direction: column;
     padding: 3rem;
 }
 
 .king-of-billiards a{
-    padding-bottom: 2rem;
-    text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 3.5rem;
+    padding-left: 20px
 }
 
 .weejuvin-dealer{
-    display: flex;
-    flex-direction: column;
+    display: block;
     padding: 3rem
 }
 
 .weejuvin-dealer a{
-    padding-bottom: 2rem;
-    text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 3.5rem;
+    padding-left: 20px
+}
+
+
+.vertical-line {
+  border-left: 1px solid #aa7b03; 
+  height: 200px; 
+}
+
+.king-of-billiards a:hover{
+  color: #aa7b03;
+  transition: 0.5s ease-in-out;
+}
+
+.weejuvin-dealer a:hover{
+  color: #aa7b03;
+  transition: 0.5s ease-in-out;
+}
+
+.trio {
+  display: flex;
 }
 
 /* LAPTOP S */
@@ -850,6 +868,20 @@ footer{
         height: 300px;
         padding-bottom: 1rem;
     }
+
+    footer h1{
+        font-size: 2.3rem;
+        text-align:center;
+        padding-bottom: 20px;
+    }
+
+    .king-of-billiards a{
+        font-size: 3rem;
+    }
+
+    .weejuvin-dealer a{
+        font-size: 3rem;
+    }
 }
 
 
@@ -1080,6 +1112,18 @@ footer{
 
     .img-popup-3{
         height: 175px;
+    }
+
+    footer{
+        padding: 2rem;
+    }
+
+    .king-of-billiards{
+        padding: 1.6rem
+    }
+
+    .weejuvin-dealer{
+        padding: 1.6rem
     }
 }
 

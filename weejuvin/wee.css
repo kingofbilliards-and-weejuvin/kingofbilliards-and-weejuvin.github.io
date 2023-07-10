@@ -75,7 +75,7 @@ header{
     width: 100%;
     color: white;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     transition: all 0.5s ease;
     white-space: nowrap;
 }
@@ -85,7 +85,6 @@ header{
     background-color: gold;
     transform: translateX(10px);
 }
-
 
 body {
     display: flex;
@@ -244,6 +243,9 @@ body {
     background-color: rgb(0, 182, 0);
     color: white;
 }
+#navbar{
+    display: hidden;
+}
 .search-container {
     width: 100%;
     display: flex;
@@ -286,8 +288,10 @@ footer {
 @media only screen and (max-width: 720px) {
     @viewport{
         width: 720px;
+        height: 100vh;
     }
     *{
+        overflow-x: hidden;
         padding: 0;
         margin: 0;
     }
@@ -308,12 +312,14 @@ footer {
         display: block;
     }
     .slider {
-        height: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
         width: 180px;
         position: absolute;
         background-color: #aa7b03;
         transition: 0.5s ease;
-        transform: translateX(-33vw) translateY(6vh);
+        transform: translateX(-140vw);
         z-index: 2;
         display: block;
     }
@@ -322,7 +328,7 @@ footer {
         color: whitesmoke;
         text-align: center;
         pointer-events: none;
-        padding-top: 8px;
+        padding-top: 10vh;
         font-family: 'Inter';
     }
     .nav ul li {
@@ -384,6 +390,10 @@ footer {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    #search-input {
+        display: block;
+        visibility: visible;
+    }
     input{
         display: none;
         visibility: hidden;
@@ -404,7 +414,7 @@ footer {
         opacity: 0;
         transform: translateX(20px);
     }
-      input:checked ~ .slider{
+    input:checked ~ .slider{
         transform: translateX(0);
     }
     header{
@@ -588,6 +598,7 @@ footer {
         flex-direction: row;
     }
     .search-container {
+        display: block;
         width: 100%;
         display: flex;
         justify-content: center;
