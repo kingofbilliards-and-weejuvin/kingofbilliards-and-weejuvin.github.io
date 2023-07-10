@@ -615,6 +615,48 @@ footer{
     }
 }
 
+/* LAPTOP S */
+@media (max-width: 1024px){
+    .item1{
+        padding: 0 5rem
+    }
+
+    #blur.item-1{
+        padding: 0 5rem
+    }
+    
+    .item-1 img{
+        width: 650px;
+        padding: 0 0 0 20px
+    }
+
+    .item2{
+        padding: 0 5rem
+    }
+
+    #blur2.item-2{
+        padding: 0 5rem
+    }
+    
+    .item-2 img{
+        width: 650px;
+        padding: 0 20px 0 0
+    }
+
+    .item3{
+        padding: 0 5rem
+    }
+
+    #blur3.item-3{
+        padding: 0 5rem
+    }
+    
+    .item-3 img{
+        width: 650px;
+        padding: 0 0 0 20px
+    }
+}
+
 /* TABLET */
 @media (max-width: 768px){
     body{

@@ -620,5 +620,13 @@ footer {
         padding: 20px;
         margin-top: auto;
     }
+    
+    .footer-logo img{
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
      
 }
