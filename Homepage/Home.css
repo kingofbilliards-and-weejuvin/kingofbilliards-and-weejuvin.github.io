@@ -326,6 +326,9 @@
     overflow-x: hidden;
   }
 
+  .wide {
+    height: 22vh
+  }
   .image-container .bill{
     width: 400px;
     height: 300px;
@@ -341,12 +344,13 @@
   .image-container {
     position: relative;
     margin: 24px;
+    display: flex;
   }
 
   .title-card {
-    width: 100%;
+    width: 600px;
     margin: 0;
-    margin-top: 3
+    margin-top: 30px;
   }
   .title-card h2 {
     font-size: 50px;
@@ -370,13 +374,82 @@
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
   }
+
+  .king-of-billiards{
+    padding: 20px;
+  }
+
+  .weejuvin-dealer{
+    padding: 20px
+  }
 }
 
 /* TABLET */
 @media (max-width: 768px){
+  .wide{
+    height: 20vh;
+  }
+  .featured {
+    height: 28vh;
+  }
+
+  .title-card {
+    margin-top: 60px;
+    width: 670px;
+    left: 6%;
+  }
+  .title1 h2 {
+    font-size: 30px;
+  }
+  .images{
+    margin-top: -5px;
+  }
+  
+  .image-container .bill{
+    width: 320px;
+    height: 200px;
+  }
+  .image-container .foos{
+    width: 320px;
+    height: 200px;
+  }
+  .image-container{
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
   .vid video{
     width: 300px;
-    height: auto
+    height: auto;
+  }
+
+  .king-of-billiards{
+    padding: 10px;
+  }
+
+  .king-of-billiards h1{
+    font-size: 23px;
+    text-align: center;
+  }
+  
+  .king-of-billiards a{
+    font-size: 20px;
+    padding: 0 20px 0 0;
+    text-align: center;
+  }
+
+  .weejuvin-dealer{
+    padding: 10px
+  }
+
+  .weejuvin-dealer h1{
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .weejuvin-dealer a{
+    font-size: 25px;
+    padding: 0 0 0 20px;
   }
 }
 
@@ -601,6 +674,10 @@
 
 /* MOBILE L */
 @media (max-width:425px){
+
+  .featured {
+    height: 60vh;
+  }
   .delivery{
     padding: 0;
   }
@@ -608,5 +685,55 @@
   .vid video{
     width:250px;
     height:auto
+  }
+
+  footer{
+    padding: 30px
+  }
+
+  .king-of-billiards {
+    text-align: center;
+  }
+
+  .king-of-billiards a{
+    padding: 0 23px 0 0 ;
+  }
+
+  .king-of-billiards h1{
+    font-size: 20px;
+    margin: 0
+  }
+
+  .weejuvin-dealer h1{
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .weejuvin-dealer a{
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+/* MOBILE S */
+@media (max-width: 320px){
+  .king-of-billiards h1{
+    font-size: 20px;
+    margin: 0
+  }
+
+  .king-of-billiards a{
+    padding: 0 3px
+  }
+
+  .weejuvin-dealer h1{
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .weejuvin-dealer a{
+    font-size: 20px;
+    margin: 0;
+    padding: 0 3px
   }
 }
