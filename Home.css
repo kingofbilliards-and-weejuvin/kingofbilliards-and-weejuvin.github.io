@@ -332,11 +332,11 @@
     }
 
     .wide .mono img {
-      width: 550px;
+      width: 480px;
       height: auto;
       margin: 0;
-      display: block;
-      padding-right: 10px;
+      display: flex;
+      flex-direction: column;
     }
 
   .texture {
@@ -455,20 +455,21 @@
   }
 
   .images {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-top: -10px;
 
   }
   .image-container .bill{
-    width: 420px;
-    height: 320px;
+    width: 350px;
+    height: 270px;
     transition: all 0.3s;
     border:3px solid #aa7b03;
     z-index: -1;
   }
   .image-container .foos{
-    width: 420px;
-    height: 320px;
+    width: 350px;
+    height: 270px;
     transition: all 0.3s;
     border:3px solid #aa7b03;
     z-index: -1;
@@ -476,8 +477,8 @@
   
   .title-card {
     width: 420px;
-    margin-right: 120px;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .title1 h2{
@@ -485,18 +486,30 @@
   }
 
   .delivery {
-    display: block;
     width: 100%;
-    height: 110vh;
+    height: 120vh;
+    display: flex;
   }
   .delivery .box {
-    margin-left: 100px;
-    width: 53%;
+
+    width: 50%;
     margin-bottom: 24px;
+    margin-left: 0px;
   }
 
   .delivery .trio {
-    padding-top: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .stack img {
+    width: 300px;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .delivery .title3 {
