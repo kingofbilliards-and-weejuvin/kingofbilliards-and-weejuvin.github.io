@@ -332,7 +332,7 @@
     }
 
     .wide .mono img {
-      width: 480px;
+      width: 445px;
       height: auto;
       margin: 0;
       display: flex;
@@ -349,7 +349,7 @@
     display: block;
   }
   .slider {
-    height: 79.5%;
+    height: 100%;
     width: 180px;
     position: absolute;
     background-color: #aa7b03;
@@ -451,7 +451,7 @@
   }
 
   .featured {
-    height: 61vh;
+    height: 75vh;
   }
 
   .images {
@@ -487,7 +487,7 @@
 
   .delivery {
     width: 100%;
-    height: 120vh;
+    height: 132vh;
     display: flex;
   }
   .delivery .box {
@@ -504,8 +504,8 @@
     justify-content: center;
   }
   .stack img {
-    width: 300px;
-    height:200px;
+    width: 200px;
+    height:100px;
     display: flex;
     flex-direction: column;
     align-items: center;

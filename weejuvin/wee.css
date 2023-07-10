@@ -1,6 +1,5 @@
 *{
     font-family: "Inter", sans-serif;
-    zoom:100%;
     margin: 0;
     padding: 0;
     
@@ -289,6 +288,7 @@ footer {
         padding: 0;
     }
     header{
+        width: 100%;
         display: flex;
         justify-self: left;
         padding-left: 25px;
