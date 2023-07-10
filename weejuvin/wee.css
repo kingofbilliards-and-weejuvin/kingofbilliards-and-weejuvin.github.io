@@ -3,7 +3,6 @@
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     
 }
 @font-face {
@@ -179,7 +178,7 @@ body {
     justify-content: center;
     overflow: hidden;
     display: none;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 100px 20px 50px;
     
     background-color: rgba(0,0,0,0);
     width: 100%;
@@ -295,6 +294,10 @@ footer {
     @viewport{
         width: 720px;
     }
+    *{
+        padding: 0;
+        margin: 0;
+    }
     body {
         overflow-x: hidden;
         display: flex;
@@ -311,7 +314,7 @@ footer {
         display: flex;
     }
     header{
-        width: 100%;
+        width: 100vw;
         display: flex;
         justify-self: left;
         padding-left: 25px;
@@ -322,7 +325,7 @@ footer {
     }
     .navbar {
         height: 100%;
-        width: 100px;
+        width: auto;
         top: 0;
         left: 0;
         background-color: #333;
