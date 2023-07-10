@@ -333,7 +333,7 @@
     }
 
     .wide .mono img {
-      width: 430px;
+      width: 410px;
       height: auto;
       margin: 0;
       display: flex;
@@ -477,7 +477,7 @@
   }
   
   .title-card {
-    width: 410px;
+    width: 380px;
     display: flex;
     flex-direction: column;
   }
@@ -495,11 +495,13 @@
   }
   .delivery .box {
 
-    width: 30%;
+    width: 40%;
     margin-bottom: 30px;
     margin-left: 0px;
   }
-
+  .title3 {
+    font-size: 30px;
+  }
   .delivery .trio {
     display: flex;
     flex-direction: column;
