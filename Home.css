@@ -329,10 +329,11 @@
         border-bottom: 5px solid #aa7b03;
         display: flex;
         align-items: center;
+        overflow-x: hidden;
     }
 
     .wide .mono img {
-      width: 445px;
+      width: 430px;
       height: auto;
       margin: 0;
       display: flex;
@@ -451,7 +452,7 @@
   }
 
   .featured {
-    height: 75vh;
+    height: 88vh;
   }
 
   .images {
@@ -461,38 +462,40 @@
 
   }
   .image-container .bill{
-    width: 350px;
-    height: 270px;
+    width: 300px;
+    height: 220px;
     transition: all 0.3s;
     border:3px solid #aa7b03;
     z-index: -1;
   }
   .image-container .foos{
-    width: 350px;
-    height: 270px;
+    width: 300px;
+    height: 220px;;
     transition: all 0.3s;
     border:3px solid #aa7b03;
     z-index: -1;
   }
   
   .title-card {
-    width: 420px;
+    width: 410px;
     display: flex;
     flex-direction: column;
   }
-
+  .text-overlay h2 {
+    font-size: 25px;
+  }
   .title1 h2{
     font-size: 20px;
   }
 
   .delivery {
     width: 100%;
-    height: 132vh;
+    height: 220vh;
     display: flex;
   }
   .delivery .box {
 
-    width: 50%;
+    width: 30%;
     margin-bottom: 30px;
     margin-left: 0px;
   }
@@ -505,7 +508,7 @@
   }
   .stack img {
     width: 200px;
-    height:100px;
+    height:150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -528,4 +531,5 @@
     font-size: 28px;
     text-align: center;
   }
+  
   }

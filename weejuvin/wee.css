@@ -1,7 +1,9 @@
 *{
+    zoom: 99%;
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     
 }
 @font-face {
@@ -17,6 +19,19 @@ body::-webkit-scrollbar {
 }
 body{
     height: 100%;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+  
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
 }
 
 header{
@@ -240,7 +255,7 @@ body {
 .search-container {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     align-items: center;
     padding: 10px;
 }
@@ -281,11 +296,19 @@ footer {
         width: 720px;
     }
     body {
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         margin: 0;
         padding: 0;
+    }
+    .header_navbar {
+        display: none;
+    }
+    
+    .burger {
+        display: flex;
     }
     header{
         width: 100%;
@@ -299,7 +322,7 @@ footer {
     }
     .navbar {
         height: 100%;
-        width: 200px;
+        width: 100px;
         top: 0;
         left: 0;
         background-color: #333;
@@ -375,6 +398,7 @@ footer {
         background-color: lightgray;
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
     .main-box{
         width: 80%;
