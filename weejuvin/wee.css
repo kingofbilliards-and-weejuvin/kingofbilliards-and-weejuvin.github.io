@@ -237,6 +237,7 @@ body {
 }
   
 .add-to-cart-btn {
+    display: none;
     margin-left: 10px;
     padding: 10px 20px;
     border-color: rgb(0, 182, 0);

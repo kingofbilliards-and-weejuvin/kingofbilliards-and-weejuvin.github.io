@@ -1,158 +1,226 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>King of Billiards and Weejuvin</title>
-    <link rel="stylesheet" href="Home.css">
+    <!-- STYLING (CSS) -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/billiards_style.css">
+    <link rel="icon" type="image/png" href="https://www.pngmart.com/files/3/8-Ball-Pool-PNG-Photos.png">
+    <!-- --- -->
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-      <div class="menu">
-        <label>
-          <input type="checkbox">
-          <div class="toggle">
-            <span class="top-line common"></span>
-            <span class="mid-line common"></span>
-            <span class="bot-line common"></span>
-          </div>
-      
-          <div class="slider">
-          <div class="nav">
-          <h1>MENU</h1>
-          <ul>
-            <li><a href="./KingOfBilliards/king_of_billiards.html">KING OF BILLIARDS</a></li>
-            <li><a href="./weejuvin/weejuvin.html">WEEJUVIN</a></li>
-            <li><a href="#"><ion-icon name="cart"></ion-icon></a></li>
-          </ul>
-          </div>
-        </label>
-      </div>
-    </div>
-    <section class="header">
-                <div class= "wide">
-                    
-                    <div class="mono">
-                        <img src="https://archive.org/download/untitled-2200-x-1080px-1800-x-1080px/Untitled%20%282200%20%C3%97%201080px%29%20%281800%20%C3%97%201080px%29.png" alt="Logo">
-                    </div>
-                    <div class="texture">
-                       <!--<img src="https://archive.org/download/pool-2_202307/POOL2.jpg" class="felt">--> 
-                        <div class="heads">
-                            <a href="../KingOfBilliards/king_of_billiards.html">King of Billiards</a>
-                            <a href="../weejuvin/weejuvin.html">Weejuvin Dealer</a>
-                            <a href="#"><ion-icon name="cart"></ion-icon></a>
-                        </div>
-                    </div> 
-                </div>
-                
-          </header>
-   
-  
-                
-  </section>
+    <!-- --- -->
 
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/857a800702.js" crossorigin="anonymous"></script>
+    <script src="Assets/javascript/billiards_js.js"></script>
+    <title>King of Billiards</title>
+    <!-- --- -->
+</head>
+<body>
+    <header class="header">
+        <a href=" "><img src="https://ia902707.us.archive.org/20/items/maxima-8-popup/billiards_logo.png"></a>
+
+        <ul class="topnav">
+            <li><a href="./Homepage/Home.html" id=" ">Home</a></li>
+            <li><a href="index.html" id=" ">King of Billiards</a></li>
+            <li><a href="../weejuvin/weejuvin.html" id=" ">Weejuvin Dealer</a></li>
+        </ul>
+
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
         
-  <section class="featured">
-            <div class="title-card">
-                <img src="https://archive.org/download/sheesh_20230709/sheesh.jpg" alt="Products">
-                <div class="title1">
-                    <h2>PRODUCTS</h2>
-                    </div>
-            </div>
-            <div class="images">
-              <div class="image-container">
-                    <img src="https://archive.org/download/maxima_202307/Maxima.jpg" class="bill" alt="Image 1">
-                
-                <a href="../weejuvin/weejuvin.html">
-                  <div class="text-overlay">
-                    <h2>Shop Now</h2>
-                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                  </div>
-                  <div class="sport">
-                    <h1>BILLIARDS</h1>
-                  </div>
-                 </a>
-              </div>
-              <div class="image-container">
-                <img src="https://archive.org/download/maxima_202307/Foosball-red.jpg" class="foos" alt="Image 2">
-                
-                <a href="../weejuvin/weejuvin.html">
-                 <div class="text-overlay">
-                  <h2>Shop Now</h2>
-                  <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                 </div>
-                 <div class="sport">
-                  <h1>OTHER GAMES</h1>
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="./Homepage/Home.html" id=" ">Home</a>
+        <a href="index.html" id=" ">King of Billiards</a>
+        <a href="../weejuvin/weejuvin.html" id=" ">Weejuvin Dealer</a>
+    </nav>
+
+    <!-- CONTENT/ITEMS -->
+    <main>
+        <!-- ITEM 1 MAXIMA 7-->
+        <div class="item-1" id="blur">
+            <div class="item-1-content">
+                <h1>STAR BILLIARDS <span>MAXIMA 7</span></h1>
+                <h3>Introducing the Maxima 7: Experience unrivaled luxury 
+                    and precision. With its captivating design, the Maxima 7 combines 
+                    modern aesthetics with timeless elegance, making it a stunning 
+                    centerpiece for any game room. Enjoy exceptional playability and 
+                    accuracy thanks to its precision engineering, while its durable 
+                    construction ensures long-lasting performance. Customize it to 
+                    match your style and elevate your gaming experience. Discover the 
+                    perfect balance of artistry and performance with the Maxima 7 Pool 
+                    Table.</h3>
+
+                <div class="sim1">
+                    <a href="#block1" onclick="toggle()">See details</a>
                 </div>
-                </a>
-              </div>
             </div>
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        </section>
-          
+
+            <img src="https://ia902707.us.archive.org/20/items/maxima-8-popup/maxima-7.png" alt="item-1">
+        </div>
+
+        <!-- POPUP 1 -->
+        <div id="popup-1">
+            <img src="https://ia902707.us.archive.org/20/items/maxima-8-popup/maxima-7-popup.jpg" alt="" class="img-popup">
+
+            <div class="desc1">
+                <h1>STAR BILLIARDS MAXIMA 7</h1>
+                <h2>Order details</h2>
+                <h2 style="color: red">110,000 PHP</h2>
+                <p>Number of boxes: 5<br>
+                    Net weight: 132.5 kg<br>
+                    Gross weight: 141 kg<br><br>
+                    Inside the boxes:
+                    <ul>
+                        <li>Long top rail, Long apron</li>
+                        <li>Assembly instruction</li>
+                        <li>Plastic strip</li>
+                        <li>Cross member</li>
+                        <li>End top rail</li>
+                        <li>Plastic pocket</li>
+                        <li>Leg, Leg stretcher, and Leg leveler</li>
+                        <li>Apron corner</li>
+                        <li>Hardware</li>
+                        <li>Corner</li>
+                        <li>Ball received board</li>
+                    </ul>
+                </p>
+                <br><br>
+                <a href="#block1" onclick="toggle()">Close</a>
+            </div>
+        </div>
 
 
-        <section class="delivery">
-          <div class="title3">SUCCESFUL DELIVERIES</div>
-           <div class="trio">
-            <div class="box">
-                <div class="stack">
-                <img src="https://archive.org/download/sd1_20230709/sd1b.png" class="d1" alt="d1">
-                <img src="https://archive.org/download/sd3b_20230709/x8wxcvhf.png" class="d2" alt="d2">
-                </div>
-                <p class="product-name">STAR BILLIARDS MAXIMA 7</p>
-                   <p>
-                     Date Delivered:
-                     04 / 19/ 22
-                   </p>
-            </div>
-            <div class="box">
-                <div class="stack">
-                <img src="https://archive.org/download/sd1_20230709/sd3.png" class="d1" alt="d1">
-                <img src="https://archive.org/download/sd2_20230709/sd2.png" class="d2" alt="d2">
-                </div>
-                <p class="product-name">MAX PRO TABLE TENNIS WITHOUT WHEELS (MX300)</p>
-                   <p>
-                    Date Delivered:
-                     03 /17 /23
-                   </p>
-            </div>
-            <div class="box">
-                <div class="stack">
-                <img src="https://archive.org/download/339404183-1317944075456574-3637664948352573139-n/339404183_1317944075456574_3637664948352573139_n.jpg" class="d1" alt="d1">
-                <img src="https://archive.org/download/sd3b_20230709/sd3b.png" class="d2" alt="d2">
-                </div>
-                <p class="product-name">STAR BILLIARDS MAXIMA 8</p>
-                    <p>
-                    Date Delivered:
-                    05 / 19/ 23
-                    </p>
-            </div>
-           </div>
-        </section>
+        <!-- ITEM 2 MAXIMA 8 -->
+        <div class="item-2" id="blur2">
+            <img src="https://ia902707.us.archive.org/20/items/maxima-8-popup/maxima-8.png" alt="item-2">
 
-          <footer>
-            <div class="king-of-billiards">
-                <h1>Socials | King of Billiards</h1>
-                <a href="https://www.facebook.com/KingofBilliards" target="_blank"><ion-icon name="logo-facebook"></ion-icon></i></a>
-                <a href="https://www.youtube.com/@KingOfBilliardsByJun" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-                <a href="https://www.instagram.com/kingofbilliards/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="https://twitter.com/kingofbilliards" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="https://www.tiktok.com/@kingofbilliardsbyjun" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
-                <a href="https://www.lazada.com.ph/king-of-billiards/" target="_blank"><ion-icon name="globe-sharp"></ion-icon></a>
+            <div class="item-2-content">
+                <h1>STAR BILLIARDS <span>MAXIMA 8</span></h1>
+                <h3>The Maxima 8. Designed to exceed expectations, the Maxima 8 is a 
+                    masterpiece of craftsmanship and innovation. Its sleek and modern 
+                    design effortlessly blends with any environment, making it a focal 
+                    point in any game room. Experience unrivaled playability with 
+                    precision engineering, ensuring accurate ball roll and responsive 
+                    rebounds. Built to withstand intense gameplay, the Maxima 8 
+                    guarantees durability and longevity. Customize your table to 
+                    reflect your personal style and elevate your gaming experience 
+                    to new heights. Embrace the perfect synergy of style and 
+                    performance with the Maxima 8 Pool Table.</h3>
+
+                <div class="sim2">
+                    <a href="#block-2" onclick="toggle1()">See details</a>
+                </div>
             </div>
-            <div class="vertical-line"></div>
-            <div class="weejuvin-dealer">
-                <h1>Socials | Weejuvin Dealer</h1>
-                <a href="https://www.facebook.com/WeejuvinDealer" target="_blank"><ion-icon name="logo-facebook"></ion-icon></i></a>
-                <a href="https://www.instagram.com/weejuvindealer/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="https://twitter.com/weejuvindealer" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="https://www.tiktok.com/@weejuvindealer" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
-                <a href="https://www.lazada.com.ph/shop/weejuvin-dealer/" target="_blank"  class="Lazada"><ion-icon name="globe-sharp"></ion-icon></a>
-        </footer>
-        
-    </body>
+        </div>
+
+        <!-- POPUP 2 -->
+        <div id="popup-2">
+            <img src="https://archive.org/download/maxima-8-popup/maxima-8-popup.jpg" alt="item-2" class="img-popup-2">
+
+            <div class="desc2">
+                <h1>STAR BILLIARDS MAXIMA 8</h1>
+                <h2>Order details</h2>
+                <h2 style="color: red">135,000 PHP</h2>
+                <p>Number of boxes: 6<br>
+                    Net weight: 168 kg<br>
+                    Gross weight: 185 kg<br><br>
+                    Inside the boxes:
+                    <ul>
+                        <li>Side rail, End rail</li>
+                        <li>Plastic strip</li>
+                        <li>Side apron, End apron</li>
+                        <li>Mid and end cross beam</li>
+                        <li>Cross member</li>
+                        <li>Ball collection box</li>
+                        <li>Rail corner, Apron corner</li>
+                        <li>Hardware</li>
+                        <li>State Wedges</li>
+                        <li>Leg and Leg leveler</li>
+                        <li>Basket</li>
+                        <li>Assembly instruction</li>
+                    </ul>
+                </p>
+                <br><br>
+
+                <a href="#block-2" onclick="toggle1()">Close</a>
+            </div>
+        </div>
+
+
+        <!-- ITEM 3 CROWN VI -->
+        <div class="item-3" id="blur3">
+            <div class="item-3-content">
+                <h1>BRUNSWICK GOLD <span>CROWN VI</span></h1>
+                <h3>The Gold Crown VI is the latest version of Brunswick's renowned 
+                    table series, maintaining their commitment to exceptional quality. 
+                    Combining a classic design with contemporary elements, the Gold 
+                    Crown VI boasts a sleek appearance. Its low-profile leg base and 
+                    concealed stretcher enhance its streamlined look, while the angled 
+                    canted leg adds a touch of sophistication. Additionally, the table 
+                    showcases updated corner and rail castings in an elegant brushed 
+                    nickel finish, elevating its overall luxurious appeal.</h3>
+
+                <div class="sim3">
+                    <a href="#block-2" onclick="toggle2()">See details</a>
+                </div>
+            </div>
+
+            <img src="https://ia902707.us.archive.org/20/items/maxima-8-popup/crown-vi.png" alt="item-1">
+        </div>
+
+        <!-- POPUP 3 -->
+        <div id="popup-3">
+            <img src="https://ia902707.us.archive.org/20/items/maxima-8-popup/crown-iv-popup.jpg" alt="item-2" class="img-popup-3">
+
+            <div class="desc3">
+                <h1>BRUNSWICK GOLD CROWN VI</h1>
+                <h2 style="color: red">470,000 PHP</h2>
+                <h2>Specifications</h2> <br>
+                <ul>
+                    <li>9 Foot Model Overall: 64.8" X 114.6" (Ball Play Area: 50" x 100")</li>
+                    <li>32" H</li>
+                    <li>Three Finishes Available: Black, Mahogany or Espresso w/ Skyline Walnut Top Rail</li>
+                    <li>Round Mother Of Pearl Rail Sights</li>
+                    <li>Pocket Options: Internal Drop Pocket or Ball Return System</li>
+                    <li>1" Three Piece Slate</li>
+                    <li>The Gold Crown VI Tournament Edition Option table features longer rails and tighter pockets engineered to strict World Pool-Billiard Association specifications. Table decals included.</li>
+                    <li>Features longer rails which result in tighter pockets. Corner pocket 4.5″ – 4.625″. Side pocket 5.0″ – 5.125″.</li>
+                    <li>Engineered to strict World Pool-Billiard Association specifications</li>
+                </ul>
+                <br><br>
+
+                <a href="#block-2" onclick="toggle2()">Close</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="king-of-billiards">
+            <h1>Socials | King of Billiards</h1>
+            <a href="https://www.facebook.com/KingofBilliards" target="_blank">Facebook <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@KingOfBilliardsByJun" target="_blank">Youtube <i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/kingofbilliards/" target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/kingofbilliards" target="_blank">Twitter <i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.tiktok.com/@kingofbilliardsbyjun" target="_blank">TikTok <i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.lazada.com.ph/king-of-billiards/" target="_blank">Lazada <i class="fa-solid fa-globe"></i></a>
+        </div>
+
+        <div class="weejuvin-dealer">
+            <h1>Socials | Weejuvin Dealer</h1>
+            <a href="https://www.facebook.com/WeejuvinDealer" target="_blank">Facebook <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/weejuvindealer/" target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/weejuvindealer" target="_blank">Twitter <i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.tiktok.com/@weejuvindealer" target="_blank">TikTok <i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.lazada.com.ph/shop/weejuvin-dealer/" target="_blank">Lazada <i class="fa-solid fa-globe"></i></a>
+        </div>
+    </footer>
+</body>
 </html>
