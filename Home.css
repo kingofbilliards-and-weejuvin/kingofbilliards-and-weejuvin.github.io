@@ -6,10 +6,7 @@
     scrollbar-width: none;  /* Firefox */
     text-decoration: none;
 }
-@media only screen and (max-width: 4000px) {
-  @viewport{
-    width: 1440px;
-}
+
 
 /* Header */
 .menu {
@@ -315,21 +312,19 @@
   color: #aa7b03;
   transition: 0.5s ease-in-out;
 }
+
+.trio {
+  display: flex;
 }
 
-/* Large Mobile Phone */
+
 @media only screen and (max-width: 600px) {
-  @viewport{
+@viewport{
     width: 600px;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
+
     .wide {
-        width: 95%;
+        width: 100%;
         height: auto;
         border-bottom: 5px solid #aa7b03;
         display: flex;
@@ -337,11 +332,11 @@ body {
     }
 
     .wide .mono img {
-      width: 270px;
+      width: 550px;
       height: auto;
       margin: 0;
       display: block;
-      padding-right: 300px;
+      padding-right: 10px;
     }
 
   .texture {
@@ -354,7 +349,7 @@ body {
     display: block;
   }
   .slider {
-    height: 100%;
+    height: 79.5%;
     width: 180px;
     position: absolute;
     background-color: #aa7b03;
@@ -371,11 +366,11 @@ body {
     padding-right: 25px;
     pointer-events: none;
     font-family: 'Inter';
-}
-.nav ul li {
+ }
+ .nav ul li {
     list-style: none;
-}
-.nav ul li a {
+ }
+ .nav ul li a {
     text-decoration: none;
     color: whitesmoke;
     padding: 10px 0;
@@ -384,16 +379,16 @@ body {
     transition: 0.2s ease-out;
     text-align: center;
     font-family: 'Inter';
-}
-.nav ul li a i {
+ }
+ .nav ul li a i {
     width: 40px;
     text-align: center;
-}
+ }
 
-.nav ul li a:hover {
+ .nav ul li a:hover {
   color: black;
   transition: 0.3s ease-in-out;
-}
+ }
   .toggle{
     position: fixed;
     height: 20px;
@@ -434,7 +429,7 @@ body {
   input{
     display: none;
     visibility: hidden;
-}
+  }
   input:checked ~ .toggle .top-line{
     left: 2px;
     top: 14px;
@@ -455,30 +450,33 @@ body {
     transform: translateX(0);
   }
 
+  .featured {
+    height: 61vh;
+  }
 
   .images {
     display: block;
-    margin-top: -20px;
+    margin-top: -10px;
 
   }
   .image-container .bill{
-    width: 200px;
-    height: 100px;
+    width: 420px;
+    height: 320px;
     transition: all 0.3s;
     border:3px solid #aa7b03;
     z-index: -1;
   }
   .image-container .foos{
-    width: 500px;
-    height: 400px;
+    width: 420px;
+    height: 320px;
     transition: all 0.3s;
     border:3px solid #aa7b03;
     z-index: -1;
   }
   
   .title-card {
-    width: 260px;
-    margin-right: 327px;
+    width: 420px;
+    margin-right: 120px;
     margin-top: 20px;
   }
 
@@ -486,7 +484,35 @@ body {
     font-size: 20px;
   }
 
- 
+  .delivery {
+    display: block;
+    width: 100%;
+    height: 110vh;
+  }
+  .delivery .box {
+    margin-left: 100px;
+    width: 53%;
+    margin-bottom: 24px;
+  }
 
+  .delivery .trio {
+    padding-top: 210px;
+  }
 
-}
+  .delivery .title3 {
+    top: 7%;
+  }
+  footer .vertical line {
+    height: 1550px;
+  }
+  .king-of-billiards h1 {
+    margin-left: 10px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .weejuvin-dealer h1 {
+    margin-left: 10px;
+    font-size: 28px;
+    text-align: center;
+  }
+  }
