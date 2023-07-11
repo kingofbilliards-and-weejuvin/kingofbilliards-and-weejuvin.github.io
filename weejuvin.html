@@ -2,7 +2,7 @@
 <html>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,, initial-scale=1.0">
-    <link rel="stylesheet" href="wee.css">
+    <link rel="stylesheet" href="./Assets/css/wee.css">
     <link rel="shortcut icon" href="https://archive.org/3/items/weejuvin/logo.ico">
     <script src="https://kit.fontawesome.com/857a800702.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
         <!-- https://archive.org/details/billiards-acc-victoryprem-3 -->
         <!-- https://archive.org/details/wd-double-smash-table-tennis-1 -->
         <!-- https://archive.org/details/tabletennis-stiga-club-roller-3 -->
-        <header>
+        <header>    
             <div class="header_cont">
                 <div class="header_logo">
                     <img src="https://ia902701.us.archive.org/3/items/weejuvin/logo.png" alt="">
@@ -27,8 +27,8 @@
             </div>
 
             <div class="header_navbar" style="font-size: 1px;">
-                <a href="../Homepage/Home.html">Home</a>
-                <a href="../index.html">King of Billiards</a>
+                <a href="./Home.html">Home</a>
+                <a href="./index.html">King of Billiards</a>
                 <a href="./weejuvin.html">Weejuvin Dealer</a>
             </div>
 
@@ -44,8 +44,8 @@
                             <div class="nav">
                                 <h1>MENU</h1>
                                 <ul>
-                                    <li><a href="../Homepage/Home.html">HOME</a></li>
-                                    <li><a href="../index.html">King of Billiards</a></li> 
+                                    <li><a href="./Home.html">HOME</a></li>
+                                    <li><a href="./index.html">King of Billiards</a></li> 
                                     <li><a href="./weejuvin.html">Weejuvin Dealer</a></li>
                                 </ul>
                             </div>
@@ -87,9 +87,13 @@
             </div>
                 
             <div class="main-box">
+                <!-- Main Idea for Search -->
+                <!-- itemname is the name for the item -->
+                <!-- if the name of the item does not correspond with the name in the search bar then it will not appear -->
                 <div class="search-container">
                     <input type="text" id="search-input" placeholder="Search by name">
                 </div>
+                <!-- Iframe for All -->
                 <div class="iframe">
                     <div class="item-container" style="width: 100%;">
                         <div class="item-box">
@@ -498,6 +502,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Iframe for Air Hockey -->
                 <div class="iframe">
                     <div class="item-container" style="width: 100%;">
                         <div class="item-box">
@@ -550,6 +555,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Iframe for Beer Pong -->
                 <div class="iframe">
                     <div class="item-container" style="width: 100%;">
                         <div class="item-box">
@@ -562,6 +568,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Iframe for Foosball -->
                 <div class="iframe">
                     <div class="item-container" style="width: 100%;">
                         <div class="item-box">
@@ -670,6 +677,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Iframe for Table Tennis -->
                 <div class="iframe">
                     <div class="item-container" style="width: 100%;">
                         <div class="item-box">
@@ -714,6 +722,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Iframe for Billiards Accesories -->
                 <div class="iframe">
                     <div class="item-container" style="width: 100%;">                    
                         <div class="item-box">
@@ -923,12 +932,16 @@
 
             
         <script>
+            /*
+            JS code for the side bar links that changes the content on click
+            */
+
             // JavaScript code to toggle the visibility of the content boxes
             document.addEventListener("DOMContentLoaded", function() {
             var links = document.querySelectorAll(".dropdown ul li");
             var contentBoxes = document.querySelectorAll(".iframe");
             var mainFrame = document.querySelector(".main-frame");
-            
+
             // Add click event listeners to each navbar link
             links.forEach(function(link, index) {
                 link.addEventListener("click", function() {
@@ -948,7 +961,10 @@
 
 
             
-            
+            /*
+                Navbar code
+            */
+           
             // JavaScript for handling click event and toggling dropdown
             const dropdownItems = document.querySelectorAll('.navbar .dropdown');
             

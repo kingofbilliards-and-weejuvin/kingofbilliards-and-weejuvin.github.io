@@ -318,7 +318,7 @@ footer {
         width: 180px;
         position: absolute;
         background-color: #aa7b03;
-        transition: 0.5s ease;
+        transition: all 0.5s ease;
         transform: translateX(-140vw);
         z-index: 2;
         display: block;
@@ -364,6 +364,7 @@ footer {
         top: 22px;
         left: 15px;
         z-index: 3;
+        transition: all 0.5s ease;
         transform: translateY(-50%); 
     }
     .toggle .common{
